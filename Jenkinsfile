@@ -17,7 +17,7 @@ pipeline{
         steps{
           script{
           withCredentials([azureServicePrincipal('azureapp')]) {
-                
+                sh 'az aks list'
                   }
         }
          }
